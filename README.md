@@ -2,7 +2,7 @@
 
 Merhaba,
 
-Hem GitHub'da, hem programlamada hem de Python'a yeni biriyim. 
+Hem GitHub'da, hem programlamada hem de Python'da yeni birisiyim. 
 
 İlk projemde kendim ve iş arkadaşlarım içim maaş hesabı oldu.
 
