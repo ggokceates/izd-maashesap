@@ -2,9 +2,9 @@
 
 Merhaba,
 
-Hem GitHub'da, hem programlamada hem de Python'da yeni biriyim. 
+Bu ilk projem,
 
-İlk projemde kendim ve iş arkadaşlarım içim maaş hesabı oldu.
+çalıştığım şirket personeli için maaş hesaplama programı.
 
 Çalıştığım şirketin TİS'ne göre hazırlanmıştır.
 Sabit değerleri her seferinde girmemek için sqlite veritabanı oluşturulmuştur.
