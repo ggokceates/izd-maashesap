@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <font face="calibri" font size="6">
+	<meta name="viewport" content="widtd=device-widtd, initial-scale=1.0,user-scalable=0">
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="no-store">
+    <meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="cache-control" content="must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+
+    <title>Deniz Personeli</title>
+    
+    <style>
+    table, th, td {
+		border: 1px solid black;
+		padding: 5px;
+		border-collapse:collapse ;
+    }
+    </style>
+</head>
+
+<body>
+	<center>
+	<font face="calibri" font size="2">
+	
+	<a href="index.html">< ANA SAYFA</a>
+	
+	<h4 style="margin:40px">Deniz Personeli Maaş Hesaplama</h4>
+	
+	Kıdem Yılı:<input type="number" id="ky">
+	
+	<form action="">
+        <table>							<!-- Kadro Seçim Tablosu -->
+		<tr> <h4>Kadro Seçimi:</h4> </tr>
+		<tr>
+			<td><input type="radio" name="kadro" id="U_U"  value="Uzakyol_U"> Uzakyol Kaptan - Başmühendis (Üniversite)    </td>
+			<td><input type="radio" name="kadro" id="U_M"  value="Uzakyol_M"> Uzakyol Kaptan - Başmühendis (MYO)   </td>		
+		</tr>
+		<tr>
+			<td><input type="radio" name="kadro" id="U_D"  value="Uzakyol_D"> Uzakyol Kaptan - Başmühendis (Diğer)</td>
+			<td><input type="radio" name="kadro" id="3_U"  value="3000KW_U"> 3000KW Başmakinist (Üniversite) </td>		
+		</tr>
+		<tr>
+			<td><input type="radio" name="kadro" id="3_M"  value="3000KW_M"> 3000KW Başmakinist (MYO)</td>
+			<td><input type="radio" name="kadro" id="3_L"  value="3000KW_L"> 3000KW Başmakinist (Lise)</td>		
+		</tr>
+		<tr>
+			<td><input type="radio" name="kadro" id="KB" value="Sınırlı"> Kaptan - Başmakinist</td>
+			<td><input type="radio" name="kadro" id="KB_U" value="Sınırlı_U"> Kaptan - Başmakinist (Üniversite)</td>		
+		</tr>
+		<tr>
+			<td><input type="radio" name="kadro" id="KB_M" value="Sınırlı_M"> Kaptan - Başmakinist (MYO)</td>
+			<td><input type="radio" name="kadro" id="KB_L" value="Sınırlı_L"> Kaptan - Başmakinist (Lise)</td>		
+		</tr>
+		<tr>
+			<td><input type="radio" name="kadro" id="T"  value="Tayfa"> Güverte - Makine Personeli</td>
+			<td><input type="radio" name="kadro" id="T_U"  value="Tayfa_U"> Güverte - Makine Personeli (Üniversite)</td>		
+		</tr>
+		<tr>
+			<td><input type="radio" name="kadro" id="T_M"  value="Tayfa_M"> Güverte - Makine Personeli (MYO)</td>
+			<td><input type="radio" name="kadro" id="T_L"  value="Tayfa_L"> Güverte - Makine Personeli (Lise)</td>		
+		</tr>   
+        </table>
+		
+		<br>
+		
+		<!--<table> 	Deniz Kadrosu için AGİ Devre dışı bırakıldı				<!-- AGİ Değerleri Tablosu 
+		
+		<tr> <h4>AGİ Seçimi:</h4> </tr>
+
+		<tr>
+			<th>Evli - Eşi Çalışmayan</th>
+			<th>Evli - Eşi Çalışan</th>
+			<th><input type="radio" id="B"  value="Bekar"> Bekar</th>
+		</tr>
+		<tr>
+			<td><input type="radio" id="EÇM0"  value="e-çocukyok">Çocuk yok</td>
+			<td><input type="radio" id="EÇL0"  value="e+çocukyok">Çocuk yok</td>
+		</tr>
+		<tr>
+			<td><input type="radio" id="EÇM1"  value="e-birçocuk">1 Çocuk</td>
+			<td><input type="radio" id="EÇL1"  value="e+birçocuk">1 Çocuk</td>
+		</tr>
+		<tr>
+			<td><input type="radio" id="EÇM2"  value="e-ikiçocuk">2 Çocuk</td>
+			<td><input type="radio" id="EÇL2"  value="e+ikiçocuk">2 Çocuk</td>
+		</tr>
+		<tr>
+			<td><input type="radio" id="EÇM3"  value="e-üççocuk">3 Çocuk</td>
+			<td><input type="radio" id="EÇL3"  value="e+üççocuk">3 Çocuk</td>			
+		</tr>
+		<tr>
+			<td><input type="radio" id="EÇM3+"  value="e-üç+çocuk">3+ Çocuk</td>
+			<td><input type="radio" id="EÇL4"  value="e+dörtçocuk">4 Çocuk</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="radio" id="EÇL5"  value="e+beşçocuk">5 Çocuk</td>
+		</tr>
+		
+		</table> -->
+
+	</form>
+	<table>
+	<tr> <h4>Puantaj:</h4> </tr>
+	<tr>
+		<th>Çocuk Sayısı:</th>
+		<td><input type="number" id="cck"></td>
+	</tr>
+	<tr>
+		<th>Çalışılan Gün:</th>
+		<td><input type="number" id="ngun"></td>
+	</tr>
+	<tr>
+		<th>Hafta Tatili:</th>
+		<td><input type="number" id="ht"></td>
+	</tr>
+	<tr>
+		<th>Fazla Mesai (Saat):</th>
+		<td><input type="number" id="nm"></td>
+	</tr>
+	<tr>
+		<th>+ Resmi Tatil Günleri: <br> (Hak edilen + gün sayısını yazınız.)</th>
+		<td><input type="number" id="bbg"></td>
+	</tr>
+	<tr>
+		<th>Hafta Tatili Çalışması:</th>
+		<td><input type="number" id="htc"></td>
+	</tr>
+	<tr>
+		<th>Rapor:</th>
+		<td><input type="number" id="rpr"></td>
+	</tr>
+	<tr>
+		<th>Yıllık İzin:</th>
+		<td><input type="number" id="yi"></td>
+	</tr>
+	<tr>
+		<th>Mazeret İzni:</th>
+		<td><input type="number" id="mi"></td>
+	</tr>
+	<tr>
+		<th rowspan="3">İkramiye Ayı:</th>
+		<td><input type="radio" name="ikramiye" id="iyok"> Yok </td>
+	</tr>
+	<tr>
+		<td><input type="radio" name="ikramiye" id="idiger"> Var </td>
+	</tr>
+	<tr>
+		<td><input type="radio" name="ikramiye" id="iaralik"> Aralık Ayı</td>
+		</tr>
+	<tr>
+		<th>Bayram Yardımı:</th>
+		<td><input type="number" id="by"></td>
+	</tr>
+	<tr>
+		<th>Sorumluluk Tazminatı:</th>
+		<th><input type="number" id="st"></th>
+	</tr>
+	</table>
+
+	<button id="btn">HESAPLA</button>
+	<br>
+	<br>
+
+	
+<font face="calibri" font size="4">
+	<div id="sonuc1"></div>
+	<div id="sonuc2"></div>
+	<div id="sonuc3"></div>
+	<div id="sonuc4"></div>
+
+
+ 
+	
+	<script>
+		function Hesapla()
+		{
+			const ykc = 100.66;
+			const ymk_g = 32;
+			const biry = 279.60;
+			const cckp = 65.2;
+			var ky=Number(document.getElementById("ky").value);
+			//var agi=Number(document.getElementById("agi").value);
+			
+			if(document.getElementById('U_U').checked) {
+			var uct = (184.64+(ky*0.15));
+			}else if(document.getElementById('U_M').checked) {
+			var uct = (173.68+(ky*0.15));
+			}else if(document.getElementById('U_D').checked) {
+			var uct = (167.41+(ky*0.15));
+			}else if(document.getElementById('3_U').checked) {
+			var uct = (153.78+(ky*0.15));
+			}else if(document.getElementById('3_M').checked) {
+			var uct = (152.38+(ky*0.15));
+			}else if(document.getElementById('3_L').checked) {
+			var uct = (150.98+(ky*0.15));
+			}else if(document.getElementById('KB').checked) {
+			var uct = (131.42+(ky*0.15));
+			}else if(document.getElementById('KB_U').checked) {
+			var uct = (123.62+(ky*0.15));
+			}else if(document.getElementById('KB_M').checked) {
+			var uct = (120.49+(ky*0.15));
+			}else if(document.getElementById('KB_L').checked) {
+			var uct = (117.35+(ky*0.15));
+			}else if(document.getElementById('T').checked) {
+			var uct = (100.14+(ky*0.15));
+			}else if(document.getElementById('T_U').checked) {
+			var uct = (90.14+(ky*0.15));
+			}else if(document.getElementById('T_M').checked) {
+			var uct = (88.58+(ky*0.15));
+			}else if(document.getElementById('T_L').checked) {
+			var uct = (87.24+(ky*0.15));
+			}
+			
+			var cck=Number(document.getElementById("cck").value);
+			var sai=(uct*0.9);
+			var ngun=Number(document.getElementById("ngun").value);
+			var ht=Number(document.getElementById("ht").value);
+			var nm=Number(document.getElementById("nm").value);
+			var bbg=Number(document.getElementById("bbg").value);
+			var htc=Number(document.getElementById("htc").value);
+			var rpr=Number(document.getElementById("rpr").value);
+			var yi=Number(document.getElementById("yi").value);
+			var mi=Number(document.getElementById("mi").value);
+			
+			if(document.getElementById('iyok').checked) { 					 <!-- ikramiye belirleme kısmı -->
+			var ia = 0;
+			}else if(document.getElementById('idiger').checked) {
+			var ia = 18;
+			}else if(document.getElementById('iaralik').checked) {
+			var ia = 22;
+			}
+			
+			var by=Number(document.getElementById("by").value);
+			var st=Number(document.getElementById("st").value);
+			var ccky=(cckp*cck);
+			var ngun_u=(ngun*uct);
+			var ht_u=(ht*uct);
+			var ymk=(ymk_g*(ngun+yi));
+			var nm_u=(nm*(uct/8)*1.6);
+			var bg_u=(bbg*uct);
+			var htc_u=(htc*uct*2);
+			var ikr_u=(uct*ia);
+			var yi_u=(uct*yi);
+			var rpr_u=(uct*rpr);
+			var mi_u=(uct*mi);
+			var sgk_m=((ngun_u+ht_u+nm_u+bg_u+htc_u+ikr_u+yi_u+rpr_u+mi_u+ykc+ymk+biry+ccky+by+st)-sai);
+			var isc_p=(sgk_m*0.14);
+			var isz_p=(sgk_m*0.01);
+			var dv=(sgk_m*0.00759);
+			var net=sgk_m //(sgk_m-(isc_p+isz_p+dv));
+			
+			document.getElementById("sonuc1").innerHTML="Maaş : "+net.toFixed(2);
+			//document.getElementById("sonuc2").innerHTML="SGK İşçi Primi: "+isc_p.toFixed(2);
+			//document.getElementById("sonuc3").innerHTML="İşsizlik Primi : "+isz_p.toFixed(2);
+			document.getElementById("sonuc4").innerHTML="Net Ücret : "+uct.toFixed(2);
+			alert("Maaş: " +net.toFixed(2)+"\nBrüt Ucret : "+uct.toFixed(2));
+		}
+		
+		var hesapBtn=document.getElementById("btn");
+		hesapBtn.onclick=Hesapla;
+		
+	</script>
+</center>	
+</font>
+</body>
+</html>
