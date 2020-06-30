@@ -1,4 +1,4 @@
-# bordro
+# izd-maashesap
 
 Çalıştığım şirket personeli için maaş hesaplama programı.
 
